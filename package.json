@@ -2,12 +2,15 @@
   "name": "contacts-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Vladimir Kolchuin",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.5",
     "vue": "^2.5.16"
   },
   "devDependencies": {
