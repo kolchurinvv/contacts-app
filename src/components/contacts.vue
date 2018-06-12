@@ -5,7 +5,26 @@
       li(v-for="row in this['contact-list']") {{ row.join(', ') }}
 </template>
 
-<script src="./contacts.js">
+<script>
+  import sqlCall from './sqlCall'
+  export default {
+    name: 'contacts',
+    props: {
+      msg: String
+    },
+    data(){
+      return {
+        contact: '',
+        'contact-list': []
+      }
+    },
+    methods:{
+      sqlCall
+    },
+    mounted () {
+      this.sqlCall()
+    }
+  }
 </script>
 
 <style >

@@ -469,3 +469,4 @@ Version: '5.7.22-log'  socket: '/usr/local/var/mysql/mysql.sock'  port: 3306  Ho
 2018-06-03T05:46:13.551187Z 4 [Note] Aborted connection 4 to db: 'contacts' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-06-03T05:46:14.462308Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
 2018-06-03T05:46:14.462396Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`contact-list` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-03T14:11:26.6NZ mysqld_safe mysqld from pid file /Users/vlad/Projects/Cometa/contacts-app/database/MacBook-Pro-2.fios-router.home.pid ended

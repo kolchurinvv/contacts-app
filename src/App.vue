@@ -1,21 +1,17 @@
 <template lang='pug'>
   #app
-    contacts(:msg="mgs")
+    contacts
 </template>
 
 <script>
-import contacts from './components/contacts.vue'
+import Contacts from './components/Contacts.vue'
+{/*import Register from './components/Register.vue'*/}
 
 export default {
-	name: 'app',
-	components: {
-		contacts
-	},
-	data() {
-		return {
-			mgs: 'new message'
-		}
-	}
+  name: 'app',
+  components: {
+    Contacts
+  },
 }
 </script>
 
