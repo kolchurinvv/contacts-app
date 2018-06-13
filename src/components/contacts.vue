@@ -6,7 +6,6 @@
 </template>
 
 <script>
-  import sqlCall from './sqlCall'
   export default {
     name: 'contacts',
     props: {
@@ -19,10 +18,8 @@
       }
     },
     methods:{
-      sqlCall
     },
     mounted () {
-      this.sqlCall()
     }
   }
 </script>

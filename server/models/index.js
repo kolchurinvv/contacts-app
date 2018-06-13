@@ -5,9 +5,10 @@ const config = require('../config/config')
 const db = {}
 
 const sequelize = new Sequelize(
-  config.database,
-  config.user,
-  config.password
+  config.db.database,
+  config.db.user,
+  config.db.password,
+  config.db.options
 )
 
 fs
@@ -16,7 +17,7 @@ fs
     file !== 'index.js'
   )
   .forEach(file => {
-    const model = sequelize['import'](path.join(__dirname, file))
+    const model = sequelize.import(path.join(__dirname, file))
     db[model.name] = model
   })
 

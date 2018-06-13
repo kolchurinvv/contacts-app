@@ -1,14 +1,19 @@
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('contacts', 'root', 'Cgjkt[kbdjcnm4367', {
-  dialect: 'mysql',
-  operatorsAliases: false
-})
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const morgan = require('morgan')
+const {sequelize} = require('../models')
+const config = require('../config/config')
 
-sequelize
-  .authenticate()
+const app = express()
+app.use(morgan('combined'))
+app.use(bodyParser.json())
+app.use(cors())
+
+require('./routes')(app)
+
+sequelize.sync()
   .then(() => {
-    console.log('Connection has been established successfully.')
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err)
+    app.listen(config.port)
+    console.log(`Server started on port ${config.port}`)
   })
