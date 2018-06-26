@@ -1,8 +1,12 @@
 <template lang='pug'>
   .container
-    button(@click='signout') Sign out
     ul Contacts of {{ user | capitalize }}
-      li(v-for="contact in contacts") {{ contact['First name'] }}
+      li(v-for="contact in contacts").
+        {{ contact['First name'] }}
+        {{ contact.Surname }}
+        {{ contact.Phone }}
+        {{ contact.Email }}
+        {{ contact.Notes}}
 </template>
 
 <script>
@@ -15,16 +19,13 @@
         contacts: null
       }
     },
-    methods: {
-      signout () {
-        this.$store.dispatch('setToken', null)
-        this.$store.dispatch('setUser', null)
-        this.$router.push({name: 'LoginRegister'})
-      }
-    },
     async mounted () {
+      if (!this.$store.state.isUserSignedIn) {
+        this.$router.push({name: 'LoginRegister'})
+        return
+      }
       this.user = this.$store.state.user.login
-      this.contacts = await ContactsService.index().data
+      this.contacts = (await ContactsService.index()).data
     }
   }
 </script>
