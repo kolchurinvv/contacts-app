@@ -6,12 +6,14 @@
       name='login'
       placeholder='login'
       v-model='login'
+      required
       )
     input(
       type='password'
       name='password'
       placeholder='password'
       v-model='password'
+      required
       )
     h5(v-html="error")
     button(@click='signin') Sign in

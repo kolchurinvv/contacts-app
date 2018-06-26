@@ -11,6 +11,12 @@ module.exports = app => {
   app.get('/contacts',
     ContactsController.index)
 
+  app.get('/contacts/:contactId',
+    ContactsController.display)
+
   app.post('/contacts',
     ContactsController.post)
+
+  app.put('/contacts/:contactId',
+    ContactsController.put)
 }

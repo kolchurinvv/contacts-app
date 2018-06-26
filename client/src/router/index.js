@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import LoginRegister from '@/components/LoginRegister.vue'
 import Contacts from '@/components/contacts.vue'
 import CreateContact from '@/components/createContact.vue'
-
+import ViewContact from '@/components/viewContact.vue'
+import EditContact from '@/components/editContact.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,16 @@ export default new Router({
       path: '/contacts/create',
       name: 'createContact',
       component: CreateContact
+    },
+    {
+      path: '/contacts/:contactId',
+      name: 'contact',
+      component: ViewContact
+    },
+    {
+      path: '/contacts/:contactId/edit',
+      name: 'editContact',
+      component: EditContact
     }
 	]
 })

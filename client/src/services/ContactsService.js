@@ -6,5 +6,11 @@ export default {
   },
   post (contact) {
     return Api().post('contacts', contact)
+  },
+  display (contactId) {
+    return Api().get(`contacts/${contactId}`)
+  },
+  put (contact) {
+    return Api().put(`contacts/${contact.id}`, contact)
   }
 }

@@ -31,7 +31,7 @@
       placeholder='Notes'
       v-model='contact.Notes'
       )
-    button(@click='create') Create
+    button(@click='save') Save
 </template>
 
 <script >
@@ -49,14 +49,18 @@
       }
     },
     methods: {
-      async create () {
-        try {
-          await ContactsService.post(this.contact)
-          this.$router.push({name: 'contacts'})
+      async save () {
+        try {   
+          await ContactsService.put(this.contact)
+          this.$router.push({name: 'contact', params:{contactId: this.contact.id}})
         } catch (err) {
           console.log(err)
         }
       }
+    },
+    async mounted () {
+      const contactId = this.$store.state.route.params.contactId
+      this.contact = (await ContactsService.display(contactId)).data
     }
   }
   
