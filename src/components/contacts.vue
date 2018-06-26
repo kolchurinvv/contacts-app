@@ -1,25 +1,22 @@
 <template lang='pug'>
   div
-    h1 {{ msg }}
-    ul
+    ul Contacts of {{ user | capitalize }}
       li(v-for="row in this['contact-list']") {{ row.join(', ') }}
 </template>
 
 <script>
   export default {
     name: 'contacts',
-    props: {
-      msg: String
-    },
-    data(){
+    data () {
       return {
-        contact: '',
+        user: null,
         'contact-list': []
       }
     },
-    methods:{
+    methods: {
     },
     mounted () {
+      this.user = this.$store.state.user.login
     }
   }
 </script>

@@ -36,17 +36,23 @@
             password: this.password
           })
         } catch (error) {
-          this.error = error.response.data.error
+          console.log(error)
         }
       },
       async signin () {
         try {
-          await AuthenticationService.signin({
+          const response = await AuthenticationService.signin({
             login: this.login,
             password: this.password
           })
+          this.$store.dispatch('setToken', response.data.token)
+          this.$store.dispatch('setUser', response.data.user)
+          const isSignedIn = await this.$store.state.isUserSignedIn
+          if (isSignedIn) {
+            this.$router.push({name: 'contacts'})
+          }
         } catch (error){
-          this.error = error.resposnse.data.error
+          console.log(error)
         }
       }
     }
