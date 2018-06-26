@@ -13,7 +13,7 @@
       placeholder='password'
       v-model='password'
       )
-    h5(v-html='error')
+    h5(v-html="error")
     button(@click='signin') Sign in
     button(@click='register') Register
 </template>
@@ -36,7 +36,7 @@
             password: this.password
           })
         } catch (error) {
-          console.log(error)
+          this.error = error.response.data.error
         }
       },
       async signin () {
@@ -52,7 +52,7 @@
             this.$router.push({name: 'contacts'})
           }
         } catch (error){
-          console.log(error)
+          this.error = error.response.data.error
         }
       }
     }
