@@ -11,6 +11,6 @@ module.exports = app => {
   app.get('/contacts',
     ContactsController.index)
 
-  app.post('/contact',
+  app.post('/contacts',
     ContactsController.post)
 }

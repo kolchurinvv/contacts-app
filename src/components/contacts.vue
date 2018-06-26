@@ -1,7 +1,8 @@
 <template lang='pug'>
   .container
     ul Contacts of {{ user | capitalize }}
-      li(v-for="contact in contacts").
+      //- todo change the to='/' to a contact preview page
+      router-link(to='/' tag='li' v-for="contact in contacts" :key='contact.id').
         {{ contact['First name'] }}
         {{ contact.Surname }}
         {{ contact.Phone }}
@@ -30,5 +31,5 @@
   }
 </script>
 
-<style >
+<style>
 </style>

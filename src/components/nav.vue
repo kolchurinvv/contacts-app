@@ -1,6 +1,7 @@
 <template lang='pug'>
   nav
     button(v-if='this.$store.state.isUserSignedIn' @click='signout') Sign out
+    router-link(to='/contacts/create' tag='button' v-if='this.$store.state.isUserSignedIn') New contact
 </template>
 
 <script>
