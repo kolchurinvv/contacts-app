@@ -13,8 +13,7 @@ function hashPassword (user, options) {
 function comparePassword (password) {
     return bcrypt
       .compare(password, this.password)
-      .then(res => { console.log('resutl ', res)
-        return res })
+      .then(res => { return res })
   }
 
 module.exports = (sequelize, DataTypes) => {

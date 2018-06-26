@@ -2,16 +2,17 @@
   .container
     button(@click='signout') Sign out
     ul Contacts of {{ user | capitalize }}
-      li(v-for="row in this['contact-list']") {{ row.join(', ') }}
+      li(v-for="contact in contacts") {{ contact['First name'] }}
 </template>
 
 <script>
+  import ContactsService from '@/services/ContactsService'
   export default {
     name: 'contacts',
     data () {
       return {
         user: null,
-        'contact-list': []
+        contacts: null
       }
     },
     methods: {
@@ -21,8 +22,9 @@
         this.$router.push({name: 'LoginRegister'})
       }
     },
-    mounted () {
+    async mounted () {
       this.user = this.$store.state.user.login
+      this.contacts = await ContactsService.index().data
     }
   }
 </script>

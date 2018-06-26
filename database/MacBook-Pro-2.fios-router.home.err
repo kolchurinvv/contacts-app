@@ -1819,3 +1819,271 @@ Version: '5.7.22-log'  socket: '/usr/local/var/mysql/mysql.sock'  port: 3306  Ho
 2018-06-13T01:11:53.832626Z 29 [Note] Aborted connection 29 to db: 'contacts' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2018-06-13T01:13:48.432912Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
 2018-06-13T01:13:48.432961Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`users` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-26T01:54:11.6NZ mysqld_safe Logging to '/Users/vlad/Projects/Cometa/contacts-app/database/MacBook-Pro-2.fios-router.home.err'.
+2018-06-26T01:54:11.6NZ mysqld_safe Starting mysqld daemon with databases from /Users/vlad/Projects/Cometa/contacts-app/database
+2018-06-26T01:54:12.188381Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-06-26T01:54:12.188873Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2018-06-26T01:54:12.188929Z 0 [Note] /usr/local/opt/mysql/bin/mysqld (mysqld 5.7.22-log) starting as process 25756 ...
+2018-06-26T01:54:12.197676Z 0 [Warning] Setting lower_case_table_names=2 because file system for /Users/vlad/Projects/Cometa/contacts-app/database/ is case insensitive
+2018-06-26T01:54:12.222654Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-06-26T01:54:12.222723Z 0 [Note] InnoDB: Uses event mutexes
+2018-06-26T01:54:12.222747Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2018-06-26T01:54:12.222768Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-06-26T01:54:12.223567Z 0 [Note] InnoDB: Number of pools: 1
+2018-06-26T01:54:12.224526Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2018-06-26T01:54:12.226752Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-06-26T01:54:12.239653Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-06-26T01:54:12.291033Z 0 [ERROR] InnoDB: Unable to lock ./ib_logfile1 error: 35
+2018-06-26T01:54:12.291075Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-06-26T01:54:12.291094Z 0 [ERROR] InnoDB: Unable to open './ib_logfile1'
+2018-06-26T01:54:12.291113Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2018-06-26T01:54:12.812685Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-06-26T01:54:12.812831Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-06-26T01:54:12.812859Z 0 [ERROR] Failed to initialize builtin plugins.
+2018-06-26T01:54:12.812884Z 0 [ERROR] Aborting
+
+2018-06-26T01:54:12.814881Z 0 [Note] Binlog end
+2018-06-26T01:54:12.815605Z 0 [Note] Shutting down plugin 'CSV'
+2018-06-26T01:54:12.815970Z 0 [Note] /usr/local/opt/mysql/bin/mysqld: Shutdown complete
+
+2018-06-26T01:54:12.6NZ mysqld_safe mysqld from pid file /Users/vlad/Projects/Cometa/contacts-app/database/MacBook-Pro-2.fios-router.home.pid ended
+2018-06-26T01:54:22.6NZ mysqld_safe Logging to '/Users/vlad/Projects/Cometa/contacts-app/database/MacBook-Pro-2.fios-router.home.err'.
+2018-06-26T01:54:22.6NZ mysqld_safe Starting mysqld daemon with databases from /Users/vlad/Projects/Cometa/contacts-app/database
+2018-06-26T01:54:22.413625Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-06-26T01:54:22.413967Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2018-06-26T01:54:22.414022Z 0 [Note] /usr/local/opt/mysql/bin/mysqld (mysqld 5.7.22-log) starting as process 26125 ...
+2018-06-26T01:54:22.417059Z 0 [Warning] Setting lower_case_table_names=2 because file system for /Users/vlad/Projects/Cometa/contacts-app/database/ is case insensitive
+2018-06-26T01:54:22.435028Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-06-26T01:54:22.435092Z 0 [Note] InnoDB: Uses event mutexes
+2018-06-26T01:54:22.435116Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2018-06-26T01:54:22.435136Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-06-26T01:54:22.435708Z 0 [Note] InnoDB: Number of pools: 1
+2018-06-26T01:54:22.435877Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2018-06-26T01:54:22.437673Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-06-26T01:54:22.449079Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2018-06-26T01:54:22.500775Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-06-26T01:54:22.503704Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 1466396
+2018-06-26T01:54:22.503742Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 1466405
+2018-06-26T01:54:22.503761Z 0 [Note] InnoDB: Database was not shutdown normally!
+2018-06-26T01:54:22.503775Z 0 [Note] InnoDB: Starting crash recovery.
+2018-06-26T01:54:22.510720Z 0 [Note] InnoDB: Last MySQL binlog file position 0 6671, file name mysql-bin.000109
+2018-06-26T01:54:22.680444Z 0 [ERROR] InnoDB: Operating system error number 2 in a file operation.
+2018-06-26T01:54:22.680506Z 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2018-06-26T01:54:22.680531Z 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2018-06-26T01:54:22.680554Z 0 [ERROR] InnoDB: Cannot open datafile for read-only: './contacts/contact@002dlist.ibd' OS error: 71
+2018-06-26T01:54:22.680576Z 0 [ERROR] InnoDB: Operating system error number 2 in a file operation.
+2018-06-26T01:54:22.680596Z 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2018-06-26T01:54:22.680616Z 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2018-06-26T01:54:22.680644Z 0 [ERROR] InnoDB: Could not find a valid tablespace file for `contacts/contact@002dlist`. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2018-06-26T01:54:22.680670Z 0 [Warning] InnoDB: Ignoring tablespace `contacts/contact@002dlist` because it could not be opened.
+2018-06-26T01:54:22.680939Z 0 [ERROR] InnoDB: In file './contacts/users.ibd', tablespace id and flags are 13556 and 33, but in the InnoDB data dictionary they are 124 and 33. Have you moved InnoDB .ibd files around without using the commands DISCARD TABLESPACE and IMPORT TABLESPACE? Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2018-06-26T01:54:22.680973Z 0 [ERROR] InnoDB: Operating system error number 2 in a file operation.
+2018-06-26T01:54:22.680994Z 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2018-06-26T01:54:22.681015Z 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2018-06-26T01:54:22.681041Z 0 [ERROR] InnoDB: Could not find a valid tablespace file for `contacts/users`. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2018-06-26T01:54:22.681078Z 0 [Warning] InnoDB: Ignoring tablespace `contacts/users` because it could not be opened.
+2018-06-26T01:54:22.699177Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-06-26T01:54:22.699424Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-06-26T01:54:22.714984Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2018-06-26T01:54:22.716366Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2018-06-26T01:54:22.716403Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2018-06-26T01:54:22.716732Z 0 [Note] InnoDB: Waiting for purge to start
+2018-06-26T01:54:22.841821Z 0 [Note] InnoDB: 5.7.22 started; log sequence number 1466405
+2018-06-26T01:54:22.842140Z 0 [Note] InnoDB: Loading buffer pool(s) from /Users/vlad/Projects/Cometa/contacts-app/database/ib_buffer_pool
+2018-06-26T01:54:22.844163Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2018-06-26T01:54:22.844322Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180625 21:54:22
+2018-06-26T01:54:22.850975Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2018-06-26T01:54:22.851085Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2018-06-26T01:54:22.974763Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2018-06-26T01:54:22.974886Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2018-06-26T01:54:22.998058Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2018-06-26T01:54:23.003031Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2018-06-26T01:54:23.005889Z 0 [Warning] CA certificate ca.pem is self signed.
+2018-06-26T01:54:23.005987Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2018-06-26T01:54:23.006661Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-06-26T01:54:23.006757Z 0 [Note] IPv6 is available.
+2018-06-26T01:54:23.006791Z 0 [Note]   - '::' resolves to '::';
+2018-06-26T01:54:23.006883Z 0 [Note] Server socket created on IP: '::'.
+2018-06-26T01:54:23.008301Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.008357Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2018-06-26T01:54:23.014976Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.015026Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2018-06-26T01:54:23.018976Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.019012Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2018-06-26T01:54:23.020595Z 0 [Warning] InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.021449Z 0 [Warning] InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.021641Z 0 [Warning] InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.021666Z 0 [Warning] Info table is not ready to be used. Table 'mysql.slave_master_info' cannot be opened.
+2018-06-26T01:54:23.022263Z 0 [Warning] InnoDB: Cannot open table mysql/slave_worker_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.022446Z 0 [Warning] InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.022468Z 0 [Warning] Info table is not ready to be used. Table 'mysql.slave_relay_log_info' cannot be opened.
+2018-06-26T01:54:23.022805Z 0 [ERROR] Native table 'performance_schema'.'cond_instances' has the wrong structure
+2018-06-26T01:54:23.022836Z 0 [ERROR] Native table 'performance_schema'.'events_waits_current' has the wrong structure
+2018-06-26T01:54:23.022862Z 0 [ERROR] Native table 'performance_schema'.'events_waits_history' has the wrong structure
+2018-06-26T01:54:23.022891Z 0 [ERROR] Native table 'performance_schema'.'events_waits_history_long' has the wrong structure
+2018-06-26T01:54:23.022924Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_host_by_event_name' has the wrong structure
+2018-06-26T01:54:23.022950Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_instance' has the wrong structure
+2018-06-26T01:54:23.022976Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_thread_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023004Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_user_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023030Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_account_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023055Z 0 [ERROR] Native table 'performance_schema'.'events_waits_summary_global_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023085Z 0 [ERROR] Native table 'performance_schema'.'file_instances' has the wrong structure
+2018-06-26T01:54:23.023110Z 0 [ERROR] Native table 'performance_schema'.'file_summary_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023138Z 0 [ERROR] Native table 'performance_schema'.'file_summary_by_instance' has the wrong structure
+2018-06-26T01:54:23.023166Z 0 [ERROR] Native table 'performance_schema'.'host_cache' has the wrong structure
+2018-06-26T01:54:23.023191Z 0 [ERROR] Native table 'performance_schema'.'mutex_instances' has the wrong structure
+2018-06-26T01:54:23.023215Z 0 [ERROR] Native table 'performance_schema'.'objects_summary_global_by_type' has the wrong structure
+2018-06-26T01:54:23.023245Z 0 [ERROR] Native table 'performance_schema'.'performance_timers' has the wrong structure
+2018-06-26T01:54:23.023274Z 0 [ERROR] Native table 'performance_schema'.'rwlock_instances' has the wrong structure
+2018-06-26T01:54:23.023304Z 0 [ERROR] Native table 'performance_schema'.'setup_actors' has the wrong structure
+2018-06-26T01:54:23.023329Z 0 [ERROR] Native table 'performance_schema'.'setup_consumers' has the wrong structure
+2018-06-26T01:54:23.023356Z 0 [ERROR] Native table 'performance_schema'.'setup_instruments' has the wrong structure
+2018-06-26T01:54:23.023381Z 0 [ERROR] Native table 'performance_schema'.'setup_objects' has the wrong structure
+2018-06-26T01:54:23.023408Z 0 [ERROR] Native table 'performance_schema'.'setup_timers' has the wrong structure
+2018-06-26T01:54:23.023437Z 0 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_index_usage' has the wrong structure
+2018-06-26T01:54:23.023462Z 0 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_table' has the wrong structure
+2018-06-26T01:54:23.023492Z 0 [ERROR] Native table 'performance_schema'.'table_lock_waits_summary_by_table' has the wrong structure
+2018-06-26T01:54:23.023517Z 0 [ERROR] Native table 'performance_schema'.'threads' has the wrong structure
+2018-06-26T01:54:23.023545Z 0 [ERROR] Native table 'performance_schema'.'events_stages_current' has the wrong structure
+2018-06-26T01:54:23.023570Z 0 [ERROR] Native table 'performance_schema'.'events_stages_history' has the wrong structure
+2018-06-26T01:54:23.023598Z 0 [ERROR] Native table 'performance_schema'.'events_stages_history_long' has the wrong structure
+2018-06-26T01:54:23.023627Z 0 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_thread_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023653Z 0 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_account_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023682Z 0 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_user_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023707Z 0 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_host_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023735Z 0 [ERROR] Native table 'performance_schema'.'events_stages_summary_global_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023760Z 0 [ERROR] Native table 'performance_schema'.'events_statements_current' has the wrong structure
+2018-06-26T01:54:23.023810Z 0 [ERROR] Native table 'performance_schema'.'events_statements_history' has the wrong structure
+2018-06-26T01:54:23.023839Z 0 [ERROR] Native table 'performance_schema'.'events_statements_history_long' has the wrong structure
+2018-06-26T01:54:23.023865Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_thread_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023894Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_account_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023919Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_user_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023947Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_host_by_event_name' has the wrong structure
+2018-06-26T01:54:23.023979Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_global_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024005Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_digest' has the wrong structure
+2018-06-26T01:54:23.024036Z 0 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_program' has the wrong structure
+2018-06-26T01:54:23.024060Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_current' has the wrong structure
+2018-06-26T01:54:23.024087Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_history' has the wrong structure
+2018-06-26T01:54:23.024116Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_history_long' has the wrong structure
+2018-06-26T01:54:23.024141Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_summary_by_thread_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024170Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_summary_by_account_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024201Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_summary_by_user_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024230Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_summary_by_host_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024258Z 0 [ERROR] Native table 'performance_schema'.'events_transactions_summary_global_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024283Z 0 [ERROR] Native table 'performance_schema'.'users' has the wrong structure
+2018-06-26T01:54:23.024311Z 0 [ERROR] Native table 'performance_schema'.'accounts' has the wrong structure
+2018-06-26T01:54:23.024338Z 0 [ERROR] Native table 'performance_schema'.'hosts' has the wrong structure
+2018-06-26T01:54:23.024363Z 0 [ERROR] Native table 'performance_schema'.'socket_instances' has the wrong structure
+2018-06-26T01:54:23.024391Z 0 [ERROR] Native table 'performance_schema'.'socket_summary_by_instance' has the wrong structure
+2018-06-26T01:54:23.024416Z 0 [ERROR] Native table 'performance_schema'.'socket_summary_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024444Z 0 [ERROR] Native table 'performance_schema'.'session_connect_attrs' has the wrong structure
+2018-06-26T01:54:23.024472Z 0 [ERROR] Native table 'performance_schema'.'session_account_connect_attrs' has the wrong structure
+2018-06-26T01:54:23.024497Z 0 [ERROR] Native table 'performance_schema'.'memory_summary_global_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024525Z 0 [ERROR] Native table 'performance_schema'.'memory_summary_by_account_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024554Z 0 [ERROR] Native table 'performance_schema'.'memory_summary_by_host_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024586Z 0 [ERROR] Native table 'performance_schema'.'memory_summary_by_thread_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024611Z 0 [ERROR] Native table 'performance_schema'.'memory_summary_by_user_by_event_name' has the wrong structure
+2018-06-26T01:54:23.024638Z 0 [ERROR] Native table 'performance_schema'.'table_handles' has the wrong structure
+2018-06-26T01:54:23.024662Z 0 [ERROR] Native table 'performance_schema'.'metadata_locks' has the wrong structure
+2018-06-26T01:54:23.024690Z 0 [ERROR] Native table 'performance_schema'.'replication_connection_configuration' has the wrong structure
+2018-06-26T01:54:23.024714Z 0 [ERROR] Native table 'performance_schema'.'replication_group_members' has the wrong structure
+2018-06-26T01:54:23.024741Z 0 [ERROR] Native table 'performance_schema'.'replication_connection_status' has the wrong structure
+2018-06-26T01:54:23.024777Z 0 [ERROR] Native table 'performance_schema'.'replication_applier_configuration' has the wrong structure
+2018-06-26T01:54:23.024803Z 0 [ERROR] Native table 'performance_schema'.'replication_applier_status' has the wrong structure
+2018-06-26T01:54:23.024829Z 0 [ERROR] Native table 'performance_schema'.'replication_applier_status_by_coordinator' has the wrong structure
+2018-06-26T01:54:23.024852Z 0 [ERROR] Native table 'performance_schema'.'replication_applier_status_by_worker' has the wrong structure
+2018-06-26T01:54:23.024877Z 0 [ERROR] Native table 'performance_schema'.'replication_group_member_stats' has the wrong structure
+2018-06-26T01:54:23.024900Z 0 [ERROR] Native table 'performance_schema'.'prepared_statements_instances' has the wrong structure
+2018-06-26T01:54:23.024925Z 0 [ERROR] Native table 'performance_schema'.'user_variables_by_thread' has the wrong structure
+2018-06-26T01:54:23.024950Z 0 [ERROR] Native table 'performance_schema'.'status_by_account' has the wrong structure
+2018-06-26T01:54:23.024972Z 0 [ERROR] Native table 'performance_schema'.'status_by_host' has the wrong structure
+2018-06-26T01:54:23.024997Z 0 [ERROR] Native table 'performance_schema'.'status_by_thread' has the wrong structure
+2018-06-26T01:54:23.025020Z 0 [ERROR] Native table 'performance_schema'.'status_by_user' has the wrong structure
+2018-06-26T01:54:23.025046Z 0 [ERROR] Native table 'performance_schema'.'global_status' has the wrong structure
+2018-06-26T01:54:23.025069Z 0 [ERROR] Native table 'performance_schema'.'session_status' has the wrong structure
+2018-06-26T01:54:23.025094Z 0 [ERROR] Native table 'performance_schema'.'variables_by_thread' has the wrong structure
+2018-06-26T01:54:23.025120Z 0 [ERROR] Native table 'performance_schema'.'global_variables' has the wrong structure
+2018-06-26T01:54:23.025142Z 0 [ERROR] Native table 'performance_schema'.'session_variables' has the wrong structure
+2018-06-26T01:54:23.026115Z 0 [Note] Event Scheduler: Loaded 0 events
+2018-06-26T01:54:23.026236Z 0 [Note] /usr/local/opt/mysql/bin/mysqld: ready for connections.
+Version: '5.7.22-log'  socket: '/usr/local/var/mysql/mysql.sock'  port: 3306  Homebrew
+2018-06-26T01:54:23.562244Z 3 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.563285Z 3 [ERROR] InnoDB: Failed to find tablespace for table `contacts`.`users` in the cache. Attempting to load the tablespace with space id 124
+2018-06-26T01:54:23.563380Z 3 [ERROR] InnoDB: In file './contacts/users.ibd', tablespace id and flags are 13556 and 33, but in the InnoDB data dictionary they are 124 and 33. Have you moved InnoDB .ibd files around without using the commands DISCARD TABLESPACE and IMPORT TABLESPACE? Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2018-06-26T01:54:23.563398Z 3 [ERROR] InnoDB: Operating system error number 2 in a file operation.
+2018-06-26T01:54:23.563408Z 3 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2018-06-26T01:54:23.563419Z 3 [ERROR] InnoDB: Could not find a valid tablespace file for `contacts/users`. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting-datadict.html for how to resolve the issue.
+2018-06-26T01:54:23.563461Z 3 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.591734Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.592017Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.598462Z 3 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:23.599331Z 3 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:37.118926Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:37.119247Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:37.145275Z 3 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:37.146177Z 3 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:42.288997Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:42.289284Z 2 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:42.333545Z 3 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:42.334531Z 3 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:48.941067Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:48.941466Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:48.961076Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:48.962325Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:49.281820Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:59.634702Z 3 [Warning] InnoDB: Cannot open table contacts/contacts from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:59.635623Z 3 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:59.662777Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:59.663077Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:54:59.991758Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:55:00.011555Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:55:00.023411Z 2 [Warning] InnoDB: Cannot calculate statistics for table `contacts`.`users` because the .ibd file is missing. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:55:13.780723Z 5 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T01:55:13.820491Z 5 [ERROR] InnoDB: Operating system error number 17 in a file operation.
+2018-06-26T01:55:13.821808Z 5 [ERROR] InnoDB: Error number 17 means 'File exists'
+2018-06-26T01:55:13.821854Z 5 [Note] InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+2018-06-26T01:55:13.821869Z 5 [ERROR] InnoDB: Cannot create file './contacts/users.ibd'
+2018-06-26T01:55:13.821885Z 5 [ERROR] InnoDB: The file './contacts/users.ibd' already exists though the corresponding table did not exist in the InnoDB data dictionary. Have you moved InnoDB .ibd files around without using the SQL commands DISCARD TABLESPACE and IMPORT TABLESPACE, or did mysqld crash in the middle of CREATE TABLE? You can resolve the problem by removing the file './contacts/users.ibd' under the 'datadir' of MySQL.
+2018-06-26T01:59:08.795663Z 6 [ERROR] InnoDB: Table `contacts`.`contacts` does not exist in the InnoDB internal data dictionary though MySQL is trying to drop it. Have you copied the .frm file of the table to the MySQL database directory from another database? Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2018-06-26T01:59:21.696567Z 8 [ERROR] InnoDB: Operating system error number 17 in a file operation.
+2018-06-26T01:59:21.699616Z 8 [ERROR] InnoDB: Error number 17 means 'File exists'
+2018-06-26T01:59:21.699643Z 8 [Note] InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+2018-06-26T01:59:21.699658Z 8 [ERROR] InnoDB: Cannot create file './contacts/users.ibd'
+2018-06-26T01:59:21.699673Z 8 [ERROR] InnoDB: The file './contacts/users.ibd' already exists though the corresponding table did not exist in the InnoDB data dictionary. Have you moved InnoDB .ibd files around without using the SQL commands DISCARD TABLESPACE and IMPORT TABLESPACE, or did mysqld crash in the middle of CREATE TABLE? You can resolve the problem by removing the file './contacts/users.ibd' under the 'datadir' of MySQL.
+2018-06-26T02:02:30.004691Z 10 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:02:30.023657Z 10 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:02:30.023707Z 10 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`users` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:04:03.681738Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:04:03.694267Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:04:03.695549Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:10.874910Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:10.875115Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:10.875958Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:10.875994Z 2 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`contacts` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-26T02:05:10.876451Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:10.876477Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:14.946843Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:14.946912Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:14.948070Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:14.948158Z 2 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`contacts` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-26T02:05:14.948931Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:14.948978Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:19.248575Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:19.248637Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:24.268504Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:24.268564Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:26.155600Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:26.155636Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:26.156216Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:26.156244Z 2 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`contacts` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-26T02:05:26.156594Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:26.156614Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2018-06-26T02:05:30.285650Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:30.285735Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:30.286957Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:30.287002Z 2 [Warning] InnoDB: Recalculation of persistent statistics requested for table `contacts`.`contacts` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2018-06-26T02:05:30.287810Z 2 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2018-06-26T02:05:30.287859Z 2 [ERROR] InnoDB: Fetch of persistent statistics requested for table `contacts`.`contacts` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
