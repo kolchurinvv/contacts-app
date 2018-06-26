@@ -1,5 +1,6 @@
 <template lang='pug'>
-  div
+  .container
+    button(@click='signout') Sign out
     ul Contacts of {{ user | capitalize }}
       li(v-for="row in this['contact-list']") {{ row.join(', ') }}
 </template>
@@ -14,6 +15,11 @@
       }
     },
     methods: {
+      signout () {
+        this.$store.dispatch('setToken', null)
+        this.$store.dispatch('setUser', null)
+        this.$router.push({name: 'LoginRegister'})
+      }
     },
     mounted () {
       this.user = this.$store.state.user.login
