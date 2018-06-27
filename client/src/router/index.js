@@ -8,6 +8,8 @@ import EditContact from '@/components/editContact.vue'
 
 Vue.use(Router)
 
+// keep names unique in order for nav bar to work propperly
+
 export default new Router({
 	routes:[
 		{
