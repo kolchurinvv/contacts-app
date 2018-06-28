@@ -6,9 +6,10 @@
     div {{ contact.Email }}
     div {{ contact.Notes }}
     router-link(
-    :to="{ name: 'editContact', params: { contactId: contact.id }}"
+    :to="{ name: 'editContact', params() { return {contactId: contact.id} }}"
     tag='button'
     ) Edit
+    button() Delete
 </template>
 
 <script>

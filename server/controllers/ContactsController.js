@@ -3,9 +3,7 @@ const {Contact} = require('../models')
 module.exports = {
   async index (req, res) {
     try {
-      const contacts = await Contact.findAll({
-        limit: 20 
-      })
+      const contacts = await Contact.findAll()
       res.send(contacts)
     } catch (err) {
       res.status(500).send({
