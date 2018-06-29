@@ -3,11 +3,16 @@ const {Contact} = require('../models')
 module.exports = {
   async index (req, res) {
     try {
-      const contacts = await Contact.findAll()
+      if (!req.user) { return }
+      const contacts = await Contact.findAll({
+        where: {
+          UserId: req.user.id
+        }
+      })
       res.send(contacts)
     } catch (err) {
       res.status(500).send({
-        error: 'An error has occured while trying fetch contacts'
+        error: 'An error has occured while trying fetch contacts', err
       })
     }
   },
@@ -18,6 +23,17 @@ module.exports = {
     } catch (err) {
       res.status(500).send({
         error: 'An error has occured while trying to create contact'
+      })
+    }
+  },
+  async delete (req, res) {
+    try {
+      const contact = await Contact.findById(req.params.contactId)
+      await contact.destroy()
+      res.send(contact)
+    } catch (err) {
+      res.status(500).send({
+        error: 'An error has occured while trying to delete contact'
       })
     }
   },

@@ -13,7 +13,7 @@ Vue.use(Router)
 export default new Router({
 	routes:[
 		{
-			path: '/',
+			path: '',
 			name: 'LoginRegister',
 			component: LoginRegister
 		},
@@ -36,6 +36,10 @@ export default new Router({
       path: '/contacts/:contactId/edit',
       name: 'editContact',
       component: EditContact
+    },
+    {
+      path: '*',
+      redirect: {name: 'LoginRegister'}
     }
 	]
 })

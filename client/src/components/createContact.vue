@@ -44,13 +44,15 @@
           Surname: null,
           Phone: null,
           Email: null,
-          Notes: null
+          Notes: null,
+          UserId: null
         }
       }
     },
     methods: {
       async create () {
         try {
+          this.contact.UserId = this.$store.state.user.id
           await ContactsService.post(this.contact)
           this.$router.push({name: 'contacts'})
         } catch (err) {

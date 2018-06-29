@@ -10,6 +10,9 @@ export default {
   display (contactId) {
     return Api().get(`contacts/${contactId}`)
   },
+  delete (contactId) {
+    return Api().delete(`contacts/${contactId}`)
+  },
   put (contact) {
     return Api().put(`contacts/${contact.id}`, contact)
   }

@@ -1,12 +1,12 @@
 const {
   sequelize,
-  Contact,
-  User
+  User,
+  Contact
 } = require('../models')
 
 const Promise  = require('bluebird')
-const contacts = require('./contacts.json')
 const users = require('./users.json')
+const contacts = require('./contacts.json')
 
 sequelize.sync({force: true})
   .then(async function () {

@@ -1,15 +1,17 @@
 <template lang='pug'>
   .container
-    button(@click="sortAlpabeticallyBy('First name')") Sort by first name
-    button(@click="sortAlpabeticallyBy('Surname')") Sort by surname
-    ul Contacts of {{ user | capitalize }}
-      router-link.contact-preview(
-        :to="{ name: 'contact', params: { contactId: contact.id }}"
-        tag='li'
-        v-for="contact in sorted" :key='contact.id')
-        | {{ contact['First name'] }}
-        | {{ contact.Surname }} 
-        em.note {{ contact.Notes }}
+    .contacts(v-if='user')
+      button(@click="sortAlpabeticallyBy('First name')") Sort by first name
+      button(@click="sortAlpabeticallyBy('Surname')") Sort by surname
+      ul Contacts of {{ user | capitalize }}
+        router-link.contact-preview(
+          :to="{ name: 'contact', params: { contactId: contact.id }}"
+          tag='li'
+          v-for="contact in sorted" :key='contact.id')
+          | {{ contact['First name'] }}
+          | {{ contact.Surname }} 
+          em.note {{ contact.Notes }}
+    h4(v-if='message') {{ message }}
 </template>
 
 <script>
@@ -20,7 +22,8 @@
       return {
         user: null,
         contacts: null,
-        sorted: []
+        sorted: [],
+        message: null
       }
     },
     methods: {
@@ -39,12 +42,17 @@
       }
     },
     async mounted () {
-      if (!this.$store.state.isUserSignedIn) {
-        this.$router.push({name: 'LoginRegister'})
-        return
+      try {
+        this.contacts = this.sorted = (await ContactsService.index()).data
+        if (!this.contacts.length) {
+          this.message = "You haven't added any contacts. Go make some friends!"
+        }
+        this.user = this.$store.state.user.login
+      } catch (error) {
+        this.message = error.response.data.error
+        setTimeout(() => {this.$router.push({name: 'LoginRegister'})}, 2000)
       }
-      this.user = this.$store.state.user.login
-      this.contacts = this.sorted = (await ContactsService.index()).data
+
     }
   }
 </script>

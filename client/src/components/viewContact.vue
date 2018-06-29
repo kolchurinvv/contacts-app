@@ -9,7 +9,7 @@
     :to="{ name: 'editContact', params() { return {contactId: contact.id} }}"
     tag='button'
     ) Edit
-    button() Delete
+    button(@click='remove') Delete
 </template>
 
 <script>
@@ -23,7 +23,16 @@
     async mounted () {
       const contactId = this.$store.state.route.params.contactId
       this.contact = (await ContactsService.display(contactId)).data
-
+    },
+    methods: {
+      async remove () {
+        try {
+          await ContactsService.delete(this.contact.id)
+          this.$router.push({name: 'contacts'})
+        } catch (err) {
+          console.log(err)
+        }
+      }
     }
   }
 </script>
